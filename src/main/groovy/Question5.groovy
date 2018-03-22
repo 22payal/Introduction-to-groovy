@@ -82,15 +82,15 @@ class HourMinute
     HourMinute minus(HourMinute a){
         this.minute-=a.minute
         this.hour-=a.hour
-//        if(this.minute<0)
-//        {
-//            this.minute=60+this.minute
-//            this.hour--
-//            if(this.hour<0)
-//            {
-//                this.hour=23
-//            }
-//        }
+        if(this.minute<0)
+        {
+            this.minute=60+this.minute
+            this.hour--
+            if(this.hour<0)
+            {
+                this.hour=23
+            }
+        }
         return this
     }
 
