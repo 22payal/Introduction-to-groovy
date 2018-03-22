@@ -35,50 +35,29 @@ class Question5
         if(list) { println "test evaluated to true inside if \n" }
 
         println("observation 9 :")
-        
+
         HourMinute obj1= new HourMinute(9,58)
         HourMinute obj2= new HourMinute(1,20)
 
-        HourMinute obj3= obj1+obj2
-        println("addition"+obj3)
+        HourMinute obj3= obj1-obj2
+        println("addition :")
+        println(obj3)
 
-        HourMinute obj4= obj1-obj2
-        println("substraction"+obj4)
+        HourMinute obj4= obj1+obj2
+        println("subtraction :")
+        println(obj4)
 
     }
 }
 
 class HourMinute
 {
-    int hour
-    int minute
+    Integer hour
+    Integer minute
 
-    HourMinute(int hour, int minute) {
+    HourMinute(Integer hour, Integer minute) {
         this.hour = hour
         this.minute = minute
-    }
-
-    HourMinute plus(HourMinute a){
-        this.minute+=a.minute;
-        this.hour+=a.hour
-        if(this.minute>=60){
-            this.minute=this.minute%60;
-            this.hour=(this.hour+1)%24;
-        }
-        return this;
-    }
-
-    HourMinute minus(HourMinute a){
-        this.minute-=a.minute;
-        this.hour-=a.hour
-        if(this.minute<0){
-            this.minute=60+this.minute;
-            this.hour--
-            if(this.hour<0){
-                this.hour=23;
-            }
-        }
-        return this;
     }
 
 
@@ -87,6 +66,33 @@ class HourMinute
         return "HourMinute{" +
                 "hour=" + hour +
                 ", minute=" + minute +
-                '}';
+                '}'
     }
+
+    HourMinute plus(HourMinute a){
+        this.minute+=a.minute
+        this.hour+=a.hour
+        if(this.minute>=60){
+            this.minute=this.minute%60
+            this.hour=(this.hour+1)%24
+        }
+        return this
+    }
+
+    HourMinute minus(HourMinute a){
+        this.minute-=a.minute
+        this.hour-=a.hour
+//        if(this.minute<0)
+//        {
+//            this.minute=60+this.minute
+//            this.hour--
+//            if(this.hour<0)
+//            {
+//                this.hour=23
+//            }
+//        }
+        return this
+    }
+
+
 }
