@@ -1,0 +1,10 @@
+this is line one which is odd
+this is line two which is even
+this is line three which is odd
+this is line four which is even
+this is line five which is odd
+this is line six which is even
+this is line seven which is odd
+this is line eight which is even
+this is line nine which is odd
+this is line ten which is even

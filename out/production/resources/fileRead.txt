@@ -1,0 +1,3 @@
+These are the contents of file from which data needs to be taken.
+and written to output file
+and thus the operation will be performed
