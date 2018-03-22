@@ -40,11 +40,11 @@ class Question5
         HourMinute obj2= new HourMinute(1,20)
 
         HourMinute obj3= obj1-obj2
-        println("addition :")
+        println("subtraction :")
         println(obj3)
 
         HourMinute obj4= obj1+obj2
-        println("subtraction :")
+        println("addition :")
         println(obj4)
 
     }
